@@ -31,13 +31,13 @@ def send():
 
     return jsonify({"status": "ok", "received": data})
 
-@app.route("/api/trade", methods=["POST"])
+@app.route("/api/trade", methods=["GET"])
 def trade():
     # Parse JSON body from the request
-    data = request.get_json()
-
+    response = supabase.table("Accept_Data").select("*").execute()
+    #print(response)
     # Just send the same JSON back to the frontend
-    return {"transaction" : "success"}
+    return jsonify({"status": "ok", "received": response.data})
 
 if __name__ == "__main__":
     app.run(debug=True)
