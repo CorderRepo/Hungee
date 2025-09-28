@@ -21,8 +21,8 @@ echo "Upgrading pip..."
 pip install --upgrade pip
 
 # Install Flask and Supabase
-echo "Installing Flask and Supabase..."
-pip install flask supabase
+echo "Installing Flask, python-dotenv and Supabase..."
+pip install flask supabase python-dotenv
 
 echo "Setup complete! Virtual environment is active."
 echo "You can verify with: which python"
