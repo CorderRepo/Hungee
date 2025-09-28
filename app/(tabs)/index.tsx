@@ -14,7 +14,7 @@ export default function TabHome() {
         <Text style={styles.title}>Hungie</Text>
 
         <TouchableOpacity>
-          <Ionicons name='chatbubble-outline' size={26} color='#333' />
+          <Ionicons name='bookmark-outline' size={26} color='#333' />
         </TouchableOpacity>
       </View>
 
