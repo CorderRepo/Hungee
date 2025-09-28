@@ -149,11 +149,11 @@ export default function RestaurantSwiper() {
               item={r}
               isTop={isTop}
               onSwipeLeft={(i: any) => {
-                console.log("Skipped:", i.name);
+                console.log("Disliked:", i.name); // Log dislike
                 handleSwipe();
               }}
               onSwipeRight={(i: any) => {
-                console.log("Liked:", i.name);
+                console.log("Liked:", i.name); // Log like
                 handleSwipe();
               }}
             />
@@ -164,6 +164,7 @@ export default function RestaurantSwiper() {
   );
 }
 
+// SUPER DUPER COOL STYLES :D
 const styles = StyleSheet.create({
   container: { flex: 1, alignItems: "center", justifyContent: "center" },
   card: {
