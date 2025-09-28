@@ -31,6 +31,7 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
 
 # typescript
@@ -54,3 +55,18 @@ pycache/
 *.env
 **/.env
 
+
+.venv/
+
+pycache/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+
+# Ignore all .env files
+*.env
+**/.env
+
+# venv
+.venv/
