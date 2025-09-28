@@ -50,4 +50,4 @@ pycache/
 *.pyd
 *.DS_Store
 
-.env/
+.env/*
