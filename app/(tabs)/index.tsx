@@ -11,7 +11,7 @@ export default function TabHome() {
           <Ionicons name='person-circle-outline' size={28} color='#333' />
         </TouchableOpacity>
 
-        <Text style={styles.title}>Hungie</Text>
+        <Text style={styles.title}>Hungee</Text>
 
         <TouchableOpacity>
           <Ionicons name='bookmark-outline' size={26} color='#333' />

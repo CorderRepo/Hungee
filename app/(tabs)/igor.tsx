@@ -23,7 +23,7 @@ export default function IgorScreen() {
           <Ionicons name='person-circle-outline' size={28} color='#333' />
         </TouchableOpacity>
 
-        <Text style={styles.navTitle}>Hungie</Text>
+        <Text style={styles.navTitle}>Hungee</Text>
 
         <TouchableOpacity>
           <Ionicons name='bookmark-outline' size={26} color='#333' />
@@ -38,8 +38,8 @@ export default function IgorScreen() {
         />
         <Text style={styles.title}>Welcome to Hungee!</Text>
         <Text style={styles.subtitle}>
-          Find meals that match your dietary options and make your nutritional
-          life the best it can be.
+          Swipe through nearby restaurants and discover meals that match your
+          taste and lifestyle.
         </Text>
 
         {/* Footer */}
