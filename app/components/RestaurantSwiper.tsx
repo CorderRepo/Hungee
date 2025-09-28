@@ -150,10 +150,37 @@ export default function RestaurantSwiper() {
               isTop={isTop}
               onSwipeLeft={(i: any) => {
                 console.log("Disliked:", i.name); // Log dislike
-                handleSwipe();
-              }}
+                   fetch("http://172.20.10.8:5000/api/send", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                      store: "Reject",
+                      data: i,
+                    }),
+                  })
+                    .then((res) => res.json())
+                    .then((data) => console.log("Server responded:", data))
+                    .catch((err) => console.error("Error:", err));
+                    handleSwipe();
+                  }}
               onSwipeRight={(i: any) => {
                 console.log("Liked:", i.name); // Log like
+                fetch("http://172.20.10.8:5000/api/send", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  store: "Accept",
+                  data: i,
+                }),
+                })
+                .then((res) => res.json())
+                .then((data) => console.log("Server responded:", data))
+                .catch((err) => console.error("Error:", err));
+
                 handleSwipe();
               }}
             />
