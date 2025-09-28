@@ -50,4 +50,7 @@ pycache/
 *.pyd
 *.DS_Store
 
-*/.env/*
+# Ignore all .env files
+*.env
+**/.env
+
