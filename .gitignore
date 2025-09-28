@@ -43,5 +43,30 @@ app-example
 /ios
 /android
 
+.venv/
+
+pycache/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+
+# Ignore all .env files
+*.env
+**/.env
+
+
+.venv/
+
+pycache/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+
+# Ignore all .env files
+*.env
+**/.env
+
 # venv
 .venv/
