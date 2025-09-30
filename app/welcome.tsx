@@ -6,11 +6,11 @@ export default function Welcome() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to Munchr</Text>
+      <Text style={styles.title}>Welcome to Hungee</Text>
       <Text style={styles.subtitle}>
         Discover new meals, swipe through restaurants, and save your favorites.
       </Text>
-      <Button title='Continue' onPress={() => router.replace("/(tabs)")} />{" "}
+      <Button title='Continue' onPress={() => router.replace("/(tabs)")} />
       {/* ^ When user hits Continue, go to tab view ^ */}
     </View>
   );
