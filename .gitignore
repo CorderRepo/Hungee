@@ -1,72 +1,97 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# --------------------------
+# Node.js dependencies
+# --------------------------
 node_modules/
+**/node_modules/
 
-# Expo
+# --------------------------
+# Expo / React Native
+# --------------------------
 .expo/
+**/.expo/
 dist/
+**/dist/
 web-build/
+**/web-build/
 expo-env.d.ts
-
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
+**/expo-env.d.ts
 .metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
+**/.metro-health-check*
 app-example
+**/app-example
 
-# generated native folders
+# --------------------------
+# Native build artifacts
+# --------------------------
 /ios
 /android
+**/ios
+**/android
+.kotlin/
+**/.kotlin/
+*.orig.*
+**/*.orig.*
+*.jks
+**/*.jks
+*.p8
+**/*.p8
+*.p12
+**/*.p12
+*.key
+**/*.key
+*.mobileprovision
+**/*.mobileprovision
 
-.venv/
+# --------------------------
+# Debug logs
+# --------------------------
+npm-debug.*
+**/npm-debug.*
+yarn-debug.*
+**/yarn-debug.*
+yarn-error.*
+**/yarn-error.*
 
-pycache/
-*.pyc
-*.pyo
-*.pyd
-*.DS_Store
+# --------------------------
+# macOS
+# --------------------------
+.DS_Store
+**/.DS_Store
+*.pem
+**/*.pem
 
-# Ignore all .env files
-*.env
+# --------------------------
+# Local environment files
+# --------------------------
+.env
 **/.env
-
-
-.venv/
-
-pycache/
-*.pyc
-*.pyo
-*.pyd
-*.DS_Store
-
-# Ignore all .env files
+.env*.local
+**/.env*.local
 *.env
-**/.env
+**/*.env
 
-# venv
+# --------------------------
+# TypeScript
+# --------------------------
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# --------------------------
+# Python
+# --------------------------
 .venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+**/*.pyc
+*.pyo
+**/*.pyo
+*.pyd
+**/*.pyd
+
+# --------------------------
+# Editor / IDE settings
+# --------------------------
+.vscode/
+**/.vscode/
