@@ -1,9 +1,12 @@
 import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router"; // ✅ fixed import
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import RestaurantSwiper from "../components/RestaurantSwiper";
 
 export default function TabHome() {
+  const router = useRouter();
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
@@ -13,7 +16,7 @@ export default function TabHome() {
 
         <Text style={styles.title}>Hungee</Text>
 
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => router.push("/saved" as any)}>
           <Ionicons name='bookmark-outline' size={26} color='#333' />
         </TouchableOpacity>
       </View>
